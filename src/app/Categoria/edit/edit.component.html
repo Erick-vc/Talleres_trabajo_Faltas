@@ -1,0 +1,30 @@
+<div class="mx-96 mt-8">
+  <div class="border bg-slate-100 shadow-lg p-4">
+    <h3>Modificar Categorias</h3>
+  </div>
+
+  <div class="flex items-center">
+    <form action="" class=" mt-4 flex flex-col gap-4 w-full p-4 justify-center items-center">
+      <div class="border-2 rounded-lg p-8 w-3/4">
+        <div class="">
+          <label for="" class="block text-gray-700 font-bold">Nombres:</label>
+          <input
+          [(ngModel)]="modelCategoria.name" name="nombre"
+            type="text"
+            class="my-3 px-2 w-full border outline-none shadow-lg h-8 rounded-lg"
+          />
+        </div>
+        <div class="">
+          <label for="" class="block text-gray-700 font-bold">Descripcion:</label>
+          <input
+          [(ngModel)]="modelCategoria.description" name="descripcion"
+            type="text"
+            class="my-3 px-2 w-full border outline-none shadow-lg h-8 rounded-lg"
+          />
+        </div>
+        <button (click)="Actualizar(modelCategoria)" class="mt-4 h-10 mx-auto w-32 bg-blue-400 rounded-md font-bold uppercase">Editar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
